@@ -3,19 +3,20 @@ import javax.swing.*;
 class Frame1 extends JFrame {
     JLabel l1;
     JMenuBar menubar;
-    JMenu fileMenu,editMenu,viewMenu,helpMenu; 
+    JMenu fileMenu, editMenu, viewMenu, helpMenu;
+    JMenuItem newFile, openFile, saveFile, closeFile;
 
-    Frame1 () {
+    Frame1() {
         fileMenu = new JMenu("File");
         editMenu = new JMenu("Edit");
         viewMenu = new JMenu("View");
         helpMenu = new JMenu("Help");
 
-        JMenuItem newFile = new JMenuItem("New");
-        JMenuItem openFile = new JMenuItem("Open folder");
-        JMenuItem saveFile = new JMenuItem("Save File");
-        JMenuItem closeFile = new JMenuItem("Close");
-        
+        newFile = new JMenuItem("New");
+        openFile = new JMenuItem("Open folder");
+        saveFile = new JMenuItem("Save File");
+        closeFile = new JMenuItem("Close");
+
         fileMenu.add(newFile);
         fileMenu.add(openFile);
         fileMenu.add(saveFile);
@@ -29,7 +30,7 @@ class Frame1 extends JFrame {
 
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setJMenuBar(menubar);
-        this.setSize(500,500);
+        this.setSize(500, 500);
         this.setVisible(true);
     }
 }
