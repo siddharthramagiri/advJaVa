@@ -3,12 +3,9 @@ import java.awt.event.*;
 import javax.swing.*;
 
 class Frame2 extends JFrame implements ActionListener {
-    JLabel l1;
-    JLabel l2;
-    JTextField t1;
-    JTextField t2;
-    JButton b1;
-    JButton b2;
+    JLabel l1;JLabel l2;
+    JTextField t1;JTextField t2;
+    JButton b1;JButton b2;
     JLabel Result;
 
     Frame2() {
@@ -18,14 +15,8 @@ class Frame2 extends JFrame implements ActionListener {
         t2 = new JTextField(100);
         b1 = new JButton("Login");
         b2 = new JButton("Sign Up");
-        this.add(l1);
-        this.add(l2);
-        this.add(t1);
-        this.add(t2);
-        this.add(b1);
-        this.add(b2);
-        Result = new JLabel();
-        this.add(Result);
+        this.add(l1);this.add(l2);this.add(t1);this.add(t2);this.add(b1);this.add(b2);
+        Result = new JLabel();this.add(Result);
 
         b1.addActionListener(this);
         b2.addActionListener(this);
